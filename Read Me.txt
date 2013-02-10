@@ -1,0 +1,119 @@
+-------------------------------------
+Game Maker GMD Recovery
+VisualBasicZone.com
+Version: .22
+For GM Versions 4.3 5.0 5.1 5.2 5.3beta 5.3 and 5.3a
+Tested on WinXp Home & Professional Edition 
+--------------------------------------
+
+Table of Contents
+ 1. Features
+ 2. Using Attach Process
+ 3. Using Open EXE
+ 4. Using Force Decrypt
+ 5. Using Brute Force
+ 6. Using Bmp Extractor
+ 7. Using Wav Extractor
+ 8. Making your own Plugin
+ 9. Help
+ 10. Contact
+
+----------------------------------------
+ 1. Features: - Is a very powerful program that allows you to peek
+    Inside a GameMaker exe or any other exe for that matter.  Allows you
+    you to dump the memory contents of a running process and attempt to 
+    decrypt a gamemaker exe program.  Even comes with a guide to do it step by step
+    I highly suggest using the guide!. Thats how I decrypt each exe!
+    Even if you can't get it to decrypt you can still dump the bmps and
+    the wavs, and scripts. Just make sure you set your memory limit high enough.
+    One step beta decompile has been in since ver .19.  I hope in the future that
+    I can decode the exe without going in to memory that will make it work for so many more people then.
+
+----------------------------------------
+ 2. Using Attach Process
+    Attach process allows you dump the memory of a certain process.
+    Allows you to set the high and low memory limits of an exe to dump the memory
+    When you dump the memory it allows my program to find the encryption key. 
+    New and improved! Now contains Application Icon pictures!
+    The lowerlimit is the base address of the running process.
+
+----------------------------------------
+ 3. Using Open Exe
+    Main function of this is to to get the game.enc. Or the gmd that is encrypted
+    And decrypt it using the key either found from memory or overrided
+    from the options panel.  Then once you have the game.enc you just extract the gmd.
+    You should use attach to process before using this function.
+
+----------------------------------------
+ 4. Using Force Decrypt
+    Force Decrypt is a function that allows you decrypt a file according to the gamemaker
+    encryption version so you can use 5.3a encryption or 5.3 encryption.
+    It is of not much use to most people. I only use it to decode 5.4 exe's.
+
+----------------------------------------
+ 5. Using Brute Force
+    To use the brute force function first you must run your game and
+    use attach to process or the guide to dump the memory of it.
+    Then the brute force will attempt to find keys in dump file.
+    It may find more than one try them each until you find one that works.
+    Use the key by double clicking the offset in the listbox this loads the encryption key.
+    Then do an open exe and select the same exe to decrypt it.
+
+----------------------------------------
+ 6. Using Bmp Extractor
+    Is a tool that you can use to extract bmps out of memory
+    And even other exes and files.
+    Just make sure you have the limit high enough.
+
+----------------------------------------
+ 7. Using Wav Extractor
+    Is a tool that you can use to extract wavs out of memory
+    And even other exes and files.
+    Just make sure you have the limit high enough.
+
+----------------------------------------
+ 8. Making your own Plugin
+    I have included a sample plugin coded in Visual Basic.
+    I will soon try to have a C++ example as well.
+    With plugins you can write your own extractors for other file formats
+    Some Ideas are PNG GIF JPEG files etc
+    In order to run your plugin you need to place .dll file in the plugins folder.
+
+----------------------------------------
+ 9. Help
+    In this version I have tired to make it easier. 
+    I have included a step by step guide to decrypting
+    a gamemaker exe into a gamemaker gmd file.
+
+    Questions:
+
+    Why does it say keyfound=false?
+    Because it cannot find the encryption key
+    Different versions of windows have different offsets for the key.
+    I suggest you install all the vb runtime files
+
+    Why does it make game.enc but not game.gmd?
+    That means it probably keyfound=false and that the encryption could not be found
+    Game.enc is the attempted decrypted file. I then try to to extract the gmd from game.enc
+
+    It won't extract the gmd!
+    It should say Finding GMD Start Offset Location
+    Then check the second line there should be a number if not
+    then it did not find the encryption key.
+
+    The program complains about psapi
+    Means you are running win98 or lower because thoose O/S lack that dll file.
+    I use psapi for two important api functionis for attach process
+
+    The program complains about a missing file
+    First search on google.com for that file
+    Make sure you have the vb runtime files installed.
+----------------------------------------
+ 10. Contact
+    You can contact me at gmdecompiler@yahoo.com
+    I do not decompile apps for you.
+    Only contact for bugs, comments and or suggestions.
+    Source code can be bought please contact me.
+    I have vb6, vb.net, c++, and Asm versions of the code in development.
+    I am currently working on a way to decrypt the .exe's without going into memory.
+    Keep checking back for more things to come.
