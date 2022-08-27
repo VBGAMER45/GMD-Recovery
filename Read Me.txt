@@ -110,10 +110,6 @@ Table of Contents
     Make sure you have the vb runtime files installed.
 ----------------------------------------
  10. Contact
-    You can contact me at gmdecompiler@yahoo.com
-    I do not decompile apps for you.
-    Only contact for bugs, comments and or suggestions.
-    Source code can be bought please contact me.
     I have vb6, vb.net, c++, and Asm versions of the code in development.
     I am currently working on a way to decrypt the .exe's without going into memory.
     Keep checking back for more things to come.
